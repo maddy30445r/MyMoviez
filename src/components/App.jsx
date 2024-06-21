@@ -92,7 +92,7 @@ export default function App() {
 
           
           setloading(true);
-          const data=await fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,{signal:signal});
+          const data=await fetch(`https://www.omdbapi.com/?apikey=${KEY}&s=${query}`,{signal:signal});
           if(!data.ok){
             throw new Error ("Oops! Something went wrong....")
           }

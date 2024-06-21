@@ -21,7 +21,7 @@ useEffect(()=>{
   useEffect(() => {
     async function getdetails() {
       const res = await fetch(
-        `http://www.omdbapi.com/?apikey=${KEY}&i=${selected.imdbID}`
+        `https://www.omdbapi.com/?apikey=${KEY}&i=${selected.imdbID}`
       );
       const data = await res.json();
       // dets=data;
